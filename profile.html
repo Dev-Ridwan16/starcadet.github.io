@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/fontawesome.min.css">
+    <link rel="stylesheet" href="./mobile.css">
+    <link rel="stylesheet" href="./tablet.css">
+    <link rel="stylesheet" href="./desktop.css">
+    <link rel="stylesheet" href="./profile.css">
+    <title>Profile</title>
+    <style>
+        p#date {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="brand">
+                <a href="index.html">
+                    <img src="./starcadetLogo.png" width="150" height="70" alt="logo" id="logo">
+                </a>
+            </div>
+            <nav>
+                <div class="toggle_btns">
+                    <a class="fa fa-shopping-cart" href="cart.html"></a>
+                    <a class="fa fa-bell" href=""></a>
+                    <a class="switch fa fa-align-left active"></a>
+                    <a class="switch fa fa-times"></a>
+                </div>
+
+                <ul id="modal" class="mainMenu">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="shop.html">Shop</a>
+                    </li>
+                    <li>
+                        <a href="aboutPage.html">About</a>
+                    </li>
+                    <li>
+                        <a href="faqs.html">FAQs</a>
+                    </li>
+
+                    <span class="header-btn" id="mobile">
+                        <a href="contact.html">
+                            <button id="contact-btn">Contact Us</button>
+                        </a>
+                        <a href="userSign.html">
+                            <button id="login-btn">Login</button>
+                        </a>
+                    </span>
+                </ul>
+            </nav>
+
+            <span class="header-btn" id="desktop">
+                <i class="fa fa-bell"></i>
+                <a href="contact.html">
+                    <button id="contact-btn">Contact Us</button>
+                </a>
+                <a href="userSign.html">
+                    <button id="login-btn">Login</button>
+                </a>
+                <a href="cart.html">
+                    <button>
+                        <i class="fa fa-shopping-cart"></i>
+                        Cart 
+                        (<div type="number" name="" value="0" class="desktop-count-cart" id="count-item">0</div>)
+                    </button>
+                </a>   
+            </span>
+            
+        </header>
+
+        <div class="wallet-container">
+            <div class="user-wallet-details">
+                <div class="name-email">
+                    <h2 id="greet-user"></h2>
+                    <span id="user-wallet-email"></span>
+                </div>
+            </div>
+            <div class="wallet-fund">
+                <div class="wallet-row1">
+                    <h3>Wallet</h3>
+                    <a href="">
+                        <button>
+                            <i class="fa fa-briefcase"></i>
+                            Withdraw funds
+                        </button>
+                    </a>
+                </div>
+                <div class="wallet-trend">
+                    <div class="wallet-row2">
+                        <div class="account-balance">
+                            <i class="fa fa-wallet"></i>
+                            <div class="amount">
+                                <i class="fa fa-dollar-sign"></i>
+                                <span>100</span>
+                            </div>
+                        </div>
+                        <div class="fund-btn">
+                            <a href="">
+                                <button id="btn-fund">
+                                    <i class="fa fa-comment-dollar"></i>
+                                    Fund wallet
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="for-transaction-history">
+                <h5>Transcation history</h5>
+                <div class="transaction-body">
+                    <table>
+                        <tr>
+                            <th>Activities</th>
+                            <th>Amount</th>
+                            <th>Description</th>
+                            <th>Date</th>
+                        </tr>
+                    </table>
+                    <p>Transcation history not available</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Don't touch the following, they are used to prevent errors -->
+
+    <p id="date" style="display: none;"></p>
+    <button id="signinbtn" style="display: none;"></button>
+    <div id="togglePassword" style="display: none;"></div>
+    <div id="signup-form" style="display: none;"></div>
+    <!-- Ends here -->
+    <script src="script.js"></script>
+    <script src="signUp.js"></script>
+        
+</body>
+
+</html>

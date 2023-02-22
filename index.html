@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/fontawesome.min.css">
+    <link rel="stylesheet" href="./mobile.css">
+    <link rel="stylesheet" href="./tablet.css">
+    <link rel="stylesheet" href="./desktop.css">
+    <title>Star Cadet</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="brand">
+                <a href="index.html">
+                    <img src="./starcadetLogo.png" width="150" height="70" alt="logo" id="logo">
+                </a>
+            </div>
+            <nav>
+                <div class="toggle_btns">
+                    <a class="fa fa-shopping-cart" href="cart.html"></a>
+                    <a class="fa fa-bell" href=""></a>
+                    <a class="switch fa fa-align-left active"></a>
+                    <a class="switch fa fa-times"></a>
+                </div>
+
+                <ul id="modal" class="mainMenu">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="shop.html">Shop</a>
+                    </li>
+                    <li>
+                        <a href="aboutPage.html">About</a>
+                    </li>
+                    <li>
+                        <a href="faqs.html">FAQs</a>
+                    </li>
+
+                    <span class="header-btn" id="mobile">
+                        <a href="contact.html">
+                            <button id="contact-btn">Contact Us</button>
+                        </a>
+                        <a href="userSign.html">
+                            <button id="login-btn">Login</button>
+                        </a>
+                    </span>
+                </ul>
+            </nav>
+
+            <span class="header-btn" id="desktop">
+                <i class="fa fa-bell"></i>
+                <a href="contact.html">
+                    <button id="contact-btn">Contact Us</button>
+                </a>
+                <a href="userSign.html">
+                    <button id="login-btn">Login</button>
+                </a>
+                <a href="cart.html">
+                    <button>
+                        <i class="fa fa-shopping-cart"></i>
+                        Cart 
+                        (<div type="number" name="" value="0" class="desktop-count-cart" id="count-item">0</div>)
+                    </button>
+                </a>   
+            </span>
+            
+        </header>
+
+        <main>
+            <section id="board">
+                <div class="board-container">
+                    <div class="text">
+                        <h1>
+                            All Your Needs <div>Are Here</div>
+                        </h1>
+
+                        <p>
+                            This e-commerce website is a platform where you can order or purchase any items. You can also find electronic items.
+                        </p>
+
+                        <div class="board-btn">
+                            <button id="explore-btn">Explore Now</button>
+                            <button id="shop-btn">
+                                <a href="shop.html">Shop Now</a>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="image">
+                        <img src="./shop-g820bfe63e_1920.jpg" alt="" width="400">
+                        
+                    </div>
+
+                    <div class="website-details">
+                            <div class="date">
+                                <i class="far fa-calendar"></i>
+
+                                <span class="date-span">
+                                    <h3>104</h3>
+                                    <p >Year(s)</p>
+                                </span>
+                            </div>
+
+                            <div class="bid">
+                                <i class="fa fa-book-reader"></i>
+
+                                <span class="date-span">
+                                    <h3>30</h3>
+                                    <p >Bids so far</p>
+                                </span>
+                            </div>
+
+                            <div class="place">
+                                <i class="fa fa-home"></i>
+
+                                <span class="date-span">
+                                    <h3>Nigeria</h3>
+                                    <p>Origin</p>
+                                </span>
+                            </div>
+                        </div>
+                </div>
+                <div class="more">
+                    <div class="location">
+                        <h5>Location</h5>
+                        <p>Nigeria</p>
+                    </div>
+                    <div class="time">
+                        <h5>Date</h5>
+                        <p id="date"></p>
+                    </div>
+                    <div class="year">
+                        <h5>Year Established</h5>
+                        <p>2020</p>
+                    </div>
+                    <div class="products">
+                        <h5>Products</h5>
+                        <a href="shop.html">All products</a>
+                    </div>
+                    <div class="searching">
+                        <input type="search" id="search" placeholder="You can search here">
+                            <i class="fa fa-search more-search-btn"></i>
+                    </div>
+                </div>
+            </section>
+            <section id="motto">
+                <div class="the-motto">
+                    <span class="motto-text">
+                        our experience to always update the latest things"
+                    </span>
+                    <i class="fa fa-quote-right"></i>
+                </div>
+                <div class="motto-image">
+                    <img src="./ProductImages/shirt2.jpg" alt="" width="80" height="80">
+                </div>
+                <div class="the-motto">
+                    <span class="motto-text">
+                        No more running out of the office at anytime on anyday to find new products. <mark>Star Cadet</mark> is now open (24hrs 7days). Get your any product of your choice at economical price"
+                         <a href="shop.html">  
+                            <button id="shop-btn">
+                                Shop now
+                            </button>
+                         </a>
+                    </span>
+                </div>
+            </section>
+            <section id="products">
+                <div class="title-and-btn">
+                    <div class="title">
+                        <h1>Our best selling products</h1>
+                    </div>
+                    <a href="shop.html">
+                        <button href="shop.html">
+                            See all products
+                            <a class="fa fa-arrow-right"></a>
+                        </button>
+                    </a>
+                </div>
+                <div id="product-temp-board">  
+                    <div class="product-details">
+                        <img src="./ProductImages/airpod.jpg" id="pro-img" alt="">
+                        <div class="feat">
+                            <div class="product-name">Airpod Pro</div>
+                            <div class="product-price"><mark>$</mark>113.56</div>
+                            
+                            <div class="btn-and-cart-desktop">
+                                <span id="count-container">
+                                    <span id="neg">
+                                        -
+                                    </span id="neg">
+                                    <span id="count">
+                                        0
+                                    </span>
+                                    <span id="pos">
+                                        +
+                                    </span>
+                                </span>
+                                <button id="add-to-cart-btn" class="desktop">
+                                    Add to cart 
+                                    <i class="fa fa-shopping-cart"></i>
+                                </button>
+                                
+                            </div>
+                            <div class="btn-and-count">
+                                <button id="add-to-cart-btn" class="mobile">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </button>
+                                <span id="count-container">
+                                    <span id="neg">
+                                        -
+                                    </span id="neg">
+                                    <span id="count">
+                                        0
+                                    </span>
+                                    <span id="pos">
+                                        +
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <img src="./ProductImages/speaker2.jpg" id="pro-img" alt="">
+                        <div class="feat">
+                            <div class="product-name">BT Speaker</div>
+                            <div class="product-price"><mark>$</mark>113.56</div>
+                            <div class="btn-and-cart-desktop">
+                                <span id="count-container">
+                                    <span id="neg">
+                                        -
+                                    </span id="neg">
+                                    <span id="count">
+                                        0
+                                    </span>
+                                    <span id="pos">
+                                        +
+                                    </span>
+                                </span>
+                                <button id="add-to-cart-btn" class="desktop">
+                                    Add to cart 
+                                    <i class="fa fa-shopping-cart"></i>
+                                </button>
+                                
+                            </div>
+                            <div class="btn-and-count">
+                                <button id="add-to-cart-btn" class="mobile">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </button>
+                                <span id="count-container">
+                                    <span id="neg">
+                                        -
+                                    </span id="neg">
+                                    <span id="count">
+                                        0
+                                    </span>
+                                    <span id="pos">
+                                        +
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <img src="./ProductImages/cargopant1.jpg" id="pro-img" alt="">
+                        <div class="feat">
+                            <div class="product-name">Cargo Pant</div>
+                            <div class="product-price"><mark>$</mark>113.56</div>
+                            <div class="btn-and-cart-desktop">
+                                <span id="count-container">
+                                    <span id="neg">
+                                        -
+                                    </span id="neg">
+                                    <span id="count">
+                                        0
+                                    </span>
+                                    <span id="pos">
+                                        +
+                                    </span>
+                                </span>
+                                <button id="add-to-cart-btn" class="desktop">
+                                    Add to cart 
+                                    <i class="fa fa-shopping-cart"></i>
+                                </button>
+                                
+                            </div>
+                            <div class="btn-and-count">
+                                <button id="add-to-cart-btn" class="mobile">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </button>
+                                <span id="count-container">
+                                    <span id="neg">
+                                        -
+                                    </span id="neg">
+                                    <span id="count">
+                                        0
+                                    </span>
+                                    <span id="pos">
+                                        +
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <img src="./ProductImages/bottle.jpg" id="pro-img" alt="">
+                        <div class="feat">
+                            <div class="product-name">Faashion Bottle</div>
+                            <div class="product-price"><mark>$</mark>113.56</div>
+                            <div class="btn-and-cart-desktop">
+                                <span id="count-container">
+                                    <span id="neg">
+                                        -
+                                    </span id="neg">
+                                    <span id="count">
+                                        0
+                                    </span>
+                                    <span id="pos">
+                                        +
+                                    </span>
+                                </span>
+                                <button id="add-to-cart-btn" class="desktop">
+                                    Add to cart 
+                                    <i class="fa fa-shopping-cart"></i>
+                                </button>
+                                
+                            </div>
+                            <div class="btn-and-count">
+                                <button id="add-to-cart-btn" class="mobile">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </button>
+                                <span id="count-container">
+                                    <span id="neg">
+                                        -
+                                    </span id="neg">
+                                    <span id="count">
+                                        0
+                                    </span>
+                                    <span id="pos">
+                                        +
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <img src="./ProductImages/guitar.jpg" id="pro-img" alt="">
+                        <div class="feat">
+                            <div class="product-name">Guitar</div>
+                            <div class="product-price"><mark>$</mark>113.56</div>
+                            <div class="btn-and-cart-desktop">
+                                <span id="count-container">
+                                    <span id="neg">
+                                        -
+                                    </span id="neg">
+                                    <span id="count">
+                                        0
+                                    </span>
+                                    <span id="pos">
+                                        +
+                                    </span>
+                                </span>
+                                <button id="add-to-cart-btn" class="desktop">
+                                    Add to cart 
+                                    <i class="fa fa-shopping-cart"></i>
+                                </button>
+                                
+                            </div>
+                            <div class="btn-and-count">
+                                <button id="add-to-cart-btn" class="mobile">
+                                    <i class="fa fa-shopping-cart"></i>
+                                    
+                                </button>
+                                <span id="count-container">
+                                    <span id="neg">
+                                        -
+                                    </span>
+                                    <span id="count">
+                                        0
+                                    </span>
+                                    <span id="pos">
+                                        +
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </section>
+            <section id="review">
+                <div class="posts">
+                    <div class="post1">
+                        <i class="fa fa-history"></i>
+                        <h4>Years of experience </h4>
+                        <span>Fashion yourself as a payfast application user</span>
+                        <button value="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro soluta officia dolore eaque obcaecati optio sunt inventore perferendis, quasi dolores architecto deserunt ducimus quas esse reprehenderit iusto? Corporis, nulla natus!">Read more</button>
+                    </div>
+                    <div class="post2">
+                        <i class="fa fa-award"></i>
+                        <h4>Achivement</h4>
+                        <span>Fashion yourself as a payfast application user</span>
+                        <button value="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro soluta officia dolore eaque obcaecati optio sunt inventore perferendis, quasi dolores architecto deserunt ducimus quas esse reprehenderit iusto? Corporis, nulla natus!">Read more</button>
+                    </div>
+                    <div class="post3">
+                        <i class="far fa-star"></i>
+                        <h4>Positive Review</h4>
+                        <span>Fashion yourself as a payfast application user</span>
+                        <button value="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro soluta officia dolore eaque obcaecati optio sunt inventore perferendis, quasi dolores architecto deserunt ducimus quas esse reprehenderit iusto? Corporis, nulla natus!">Read more</button>
+                    </div>
+                </div>
+                <div class="visions">
+                    <div class="vision1">
+                        <h1>36+</h1>
+                        <span>User Trust</span>
+                    </div>
+                    <hr>
+                    <div class="vision2">
+                        <h1>42K+</h1>
+                        <span>Brand Vision</span>
+                    </div>
+                    <hr>
+                    <div class="vision1">
+                        <h1>8K+</h1>
+                        <span>Achivement</span>
+                    </div>
+                </div>
+                
+            </section>
+            <section id="outfit">
+                <div class="outfit-header">
+                    <h1>Trending outfit of the day</h1>
+                    <span>The e-commerce site has an eye catching design and is perfect for people who want to buy diffferent items, but don't have time for shopping</span>
+                    <a href="">
+                        <button id="explore-btn">Explore</button>
+                    </a>
+                </div>
+                <div class="outfit-images">
+                    <div class="outfit-details">
+                        <img src="./ProductImages/shirt1.jpg" width="150" height="150" alt="">
+                        <div class="feat">
+                            <div class="product-name">
+                                Flower shirt
+                                <p>Collection 2022</p>
+                            </div>
+                            <div class="product-price"><mark>$</mark>173</div>
+                        </div>
+                    </div>
+                    <div class="outfit-details">
+                        <img src="./ProductImages/shirt2.jpg" width="150" height="150" alt="">
+                        <div class="feat">
+                            <div class="product-name">
+                                Round neck Top 
+                                <p>Collection 2022</p>
+                            </div>
+                            <div class="product-price"><mark>$</mark>210</div>
+                        </div>
+                    </div>
+                    <div class="outfit-details">
+                        <img src="./ProductImages/shirt3.jpg" width="150" height="150" alt="">
+                        <div class="feat">
+                            <div class="product-name">
+                                Round Nect packed shirts
+                                <p>Collection 2022</p>
+                            </div>
+                            <div class="product-price"><mark>$</mark>344</div>
+                        </div>
+                    </div>
+                    
+                    <div class="outfit-details">
+                        <img src="./ProductImages/shirt5.jpg" width="150" height="150" alt="">
+                        <div class="feat">
+                            <div class="product-name">
+                                Hoodie
+                                <p>Collection 2022</p>
+                            </div>
+                            <div class="product-price"><mark>$</mark>110</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="temp-contact">
+                <h1>
+                    Have Any Question?
+                </h1>
+                <div class="contact-form">
+                    <a href="contact.html">
+                        <button class="contact-btn">Contact us</button>
+                    </a>
+                    <span>We reply as soon as your message drop</span>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="brand-com">
+                <a href="index.html">
+                    <img src="./starcadetlogo.png" alt="" width="150" height="150">
+                </a>
+                <p>Looking for an e-commerce website? We offer a turn key e-commerce website with the latest teachnology. Get your online store today!</p>
+                <ul>
+                    <li>
+                        <a href="#" class="fab fa-facebook"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="fab fa-twitter"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="fab fa-instagram"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="lists">
+                <div class="home-comp">
+                    <div class="the-home">
+                        <h4>Home</h4>
+                        <ul>
+                            <li>
+                                <a href="">Discover</a>
+                            </li>
+                            <li>
+                                <a href="">Explore</a>
+                            </li>
+                            <li>
+                                <a href="">Join</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="the-home">
+                        <h4>Company</h4>
+                        <ul>
+                            <li>
+                                <a href="">Coporation</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                            <li>
+                                <a href="aboutPage.html">About Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="feat-cont">
+                    <div class="the-home">
+                        <h4>Features</h4>
+                        <ul>
+                            <li>
+                                <a href="shop.html">Shop</a>
+                            </li>
+                            <li>
+                                <a href="cart.html">Cart</a>
+                            </li>
+                            <li>
+                                <a href="">Notification</a>
+                            </li>
+                            <li>
+                                <a href="#outfit">Sales</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="the-home">
+                        <h4>Contact Us</h4>
+                        <ul>
+                            <li>
+                                <a href="">Privacy & Policy</a>
+                            </li>
+                            <li>
+                                <a href="">+234 704 734 4365</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- <div class="footer" id="for"></div> -->
+    </div>
+    
+</body>
+<button id="signinbtn" style="display: none;"></button>
+<p id="date" style="display: none;"></p>
+    <button id="signinbtn" style="display: none;"></button>
+    <div id="togglePassword" style="display: none;"></div>
+    <div id="signup-form" style="display: none;"></div>
+    <div id="greet-user" style="display: none;"></div>
+    <div id="user-wallet-email" style="display: none;"></div>
+<script src="./script.js"></script>
+</html>
+
+<!-- 
+    Tablet portrait mode
+    @media screen and (max-width of 760px)
+ -->

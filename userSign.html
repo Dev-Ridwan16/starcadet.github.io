@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/fontawesome.min.css">
+    <link rel="stylesheet" href="./mobile.css">
+    <link rel="stylesheet" href="./tablet.css">
+    <link rel="stylesheet" href="./desktop.css">
+    <link rel="stylesheet" href="./userSign.css">
+    <title>Sign-in</title>
+</head>
+<body>
+    <header>
+        <div class="brand">
+            <a href="index.html">
+                <img src="./starcadetLogo.png" width="150" height="70" alt="logo" id="logo">
+            </a>
+        </div>
+        <nav>
+            <div class="toggle_btns">
+                <a class="fa fa-shopping-cart" href="cart.html"></a>
+                <a class="fa fa-bell" href=""></a>
+                <a class="switch fa fa-align-left active"></a>
+                <a class="switch fa fa-times"></a>
+            </div>
+
+            <ul id="modal" class="mainMenu">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="shop.html">Shop</a>
+                </li>
+                <li>
+                    <a href="aboutPage.html">About</a>
+                </li>
+                <li>
+                    <a href="faqs.html">FAQs</a>
+                </li>
+
+                <span class="header-btn" id="mobile">
+                    <a href="contact.html">
+                        <button id="contact-btn">Contact Us</button>
+                    </a>
+                    <a href="userSign.html">
+                        <button id="login-btn">Login</button>
+                    </a>
+                </span>
+            </ul>
+        </nav>
+
+        <span class="header-btn" id="desktop">
+            <i class="fa fa-bell"></i>
+            <a href="contact.html">
+                <button id="contact-btn">Contact Us</button>
+            </a>
+            <a href="userSign.html">
+                <button id="login-btn">Login</button>
+            </a>
+            <a href="cart.html">
+                <button>
+                    <i class="fa fa-shopping-cart"></i>
+                    Cart 
+                    (<div type="number" name="" value="0" class="desktop-count-cart" id="count-item">0</div>)
+                </button>
+            </a>   
+        </span>
+        
+    </header>
+    <p id="date"></p>
+    <div class="usersign-contianer body">
+        <form action="" id="formParent">
+            <h1>Sign-in</h1>
+            <p id="email-error" class="error"></p>
+            <div class="userId">
+                <label for="">UserName/Email</label>
+                <input type="email" name="email" id="login-email" placeholder="UserName or User Email">
+            </div>
+            <div class="userPass">
+                <label for="">Password</label>
+                <input type="password" name="password" id="login-password">
+            </div>
+            <button id="signinbtn">
+                <a href="">Sign-in</a>
+            </button>
+            <p class="forgot-pass">
+                Forgot password?
+                <a href="">Reset</a>
+            </p>
+            <div class="newuser">
+                Are you a new member?<a href="signUp.html">Sign Up</a>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <div class="brand-com">
+            <a href="index.html">
+                <img src="./starcadetlogo.png" alt="" width="150" height="150">
+            </a>
+            <p>Looking for an e-commerce website? We offer a turn key e-commerce website with the latest teachnology. Get your online store today!</p>
+            <ul>
+                <li>
+                    <a href="#" class="fab fa-facebook"></a>
+                </li>
+                <li>
+                    <a href="#" class="fab fa-twitter"></a>
+                </li>
+                <li>
+                    <a href="#" class="fab fa-instagram"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="lists">
+            <div class="home-comp">
+                <div class="the-home">
+                    <h4>Home</h4>
+                    <ul>
+                        <li>
+                            <a href="">Discover</a>
+                        </li>
+                        <li>
+                            <a href="">Explore</a>
+                        </li>
+                        <li>
+                            <a href="">Join</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="the-home">
+                    <h4>Company</h4>
+                    <ul>
+                        <li>
+                            <a href="">Coporation</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                        <li>
+                            <a href="aboutPage.html">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="feat-cont">
+                <div class="the-home">
+                    <h4>Features</h4>
+                    <ul>
+                        <li>
+                            <a href="shop.html">Shop</a>
+                        </li>
+                        <li>
+                            <a href="cart.html">Cart</a>
+                        </li>
+                        <li>
+                            <a href="">Notification</a>
+                        </li>
+                        <li>
+                            <a href="#outfit">Sales</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="the-home">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li>
+                            <a href="">Privacy & Policy</a>
+                        </li>
+                        <li>
+                            <a href="">+234 704 734 4365</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    <p id="date" style="display: none;"></p>
+    <button id="signinbtn" style="display: none;"></button>
+    <div id="togglePassword" style="display: none;"></div>
+    <div id="signup-form" style="display: none;"></div>
+    <div id="greet-user" style="display: none;"></div>
+    <div id="user-wallet-email" style="display: none;"></div>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+.wallet-container {
+    padding: 20px;
+}
+.user-wallet-details {
+    background: #0e3095;
+    color: white;
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+/* .user-wallet-details div {
+    margin: 0 0 0 100px;
+} */
+.user-wallet-details .name-email h2 {
+    margin-bottom: 10px;
+}
+.wallet-fund {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.wallet-fund .wallet-row1, .wallet-fund .wallet-row2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+/* .wallet-fund .wallet-row2 {
+    flex-direction: column;
+    border: 1.5px solid grey;
+    border-radius: 10px;
+} */
+.wallet-fund .wallet-row1 h3 {
+    color: #4963b3;
+    padding: 5px 0;
+    font-size: 25px;
+}
+.wallet-fund .wallet-row1 button {
+    background: #0e3095;
+    padding: 15px;
+}
+.wallet-fund .wallet-row2 .account-balance {
+    display: flex;
+    justify-content: space-between;
+}
+.wallet-fund .wallet-row2 .account-balance .fa-wallet {
+    color: rgb(82, 173, 82);
+    font-size: 30px;
+    cursor: pointer;
+}
+.wallet-fund .wallet-row2 .account-balance .amount {
+    color: #4963b3;
+    font-size: 30px;
+}
+.for-transaction-history {
+    box-shadow: 0 0 10px rgb(212, 210, 210);
+    padding: 20px;
+}
+.for-transaction-history h5 {
+    text-align: center;
+    font-size: 15px;
+}
+
+.for-transaction-history table th {
+    border: 1px solid grey;
+    padding: 10px;
+}
+p {
+    text-align: center;
+    color: gray;
+    padding: 50px;
+}

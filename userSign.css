@@ -1,0 +1,166 @@
+div.usersign-contianer {
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4% 0;
+}
+form {
+    background: white;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3),
+            0 7px 21px 0 rgba(0, 0, 0, 0.20);
+    padding: 40px;
+}
+form h1 {
+    text-align: center;
+    color: #0e3095;
+    padding-bottom: 20px;
+}
+form p#email-error {
+    background: rgb(250, 191, 191);
+    text-align: center;
+    font-size: 15px;
+}
+.remove {
+    display: none;
+}
+form div.userId, form div.userPass, div {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+form div.userId label, form div.userPass label {
+    padding: 10px;
+}
+label {
+    color: #0e3095;
+}
+form div.userId input, 
+form div.userPass input {
+    background: white;
+    padding: 10px;
+    border: 0.5px solid rgb(204, 204, 204);
+    border-radius: 5vh;
+}
+#signinbtn,#sign-up-btn {
+    background: #0e3095;
+    margin: 1rem auto;
+    width: 15rem;
+    border-radius: 2vh;
+    border: none;
+}
+#sign-up-btn {
+    width: 100%;
+}
+form .forgot-pass, form div.newuser {
+    text-align: center;
+    font-size: 13px;
+    padding-bottom: 10px;
+}
+form .forgot-pass a, form div.newuser a {
+    color: #0e3095;
+}
+
+#date {
+    display: none;
+}
+/* #firstname, #secondname, #middlename, #tel, #signUpEmail, #myPass, #confirmpass  */
+div input{
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 5px;
+    outline: none;
+    border: 1px solid black;
+}
+div.success input {
+    border-color: #2ecc71;
+}
+div.error input {
+    border-color: #e74c3c;
+}
+div.error small {
+    visibility: visible;
+}
+p#pswalert {
+    font-size: 10px;
+    color: grey;
+    background: rgb(250, 191, 191);
+    padding: 2px;
+    visibility: hidden;
+}
+#alertroom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div#emptyalert {
+    border: 1px solid red;
+    width: fit-content;
+    padding: 15px;
+}
+div#emptyalert h5 {
+    color: red;
+    padding-bottom: 10px;
+}
+.hidealert {
+    display: none;
+}
+.emptyinput {
+    border: 2px solid red;
+}
+.filledinput {
+    border: 2px solid green;
+}
+/* .fa-exclamation-triangle {
+    color: red;
+    margin: 35px 0 10px 360px;
+    position: absolute;
+    display: none;
+}
+.error-mark {
+    display: block;
+} */
+.bi-eye-slash {
+    margin-top: -28px;
+    text-align: end;
+    margin: -28px 0 18px auto;
+    padding: 0 10px;
+    cursor: pointer;
+}
+div#footer {
+    background-color: rgb(9, 0, 41);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+div.span {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+div.span span {
+    margin: 20px 30px;
+}
+p#privacy {
+    font-size: 12px;
+    margin: 20px 0 0 0;
+    text-align: center;
+    line-height: 20px;
+}
+p#privacy a {
+    color: #0e3095;
+    text-decoration: dashed;
+}
+.get {
+    scroll-behavior: smooth;
+}
+
+
+/* .showsmall {
+    visibility: visible;
+} */

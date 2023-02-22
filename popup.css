@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.buy-btn-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+}
+.buy-btn {
+    background-color: green;
+    border: transparent;
+    border-radius: 10px;
+    padding: 20px 50px;
+    color: white;
+}
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    user-select: none;
+    opacity: 0;
+}
+.popup-box-container {
+    background: #fdfdfd;
+    width: 400px;
+    height: 50vh;
+    text-align: center;
+    position: fixed;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%);
+    border-radius: 10px;
+    padding: 50px;
+}
+/* .check-container {
+    color: green;
+    font-size: 50px;
+} */
+.fa-check-circle {
+    color: green;
+    box-shadow: 0 0 10px rgb(100, 99, 99);
+    border-radius: 50%;
+    font-size: 50px;
+    border: none;
+    background: none;
+}
+.popup-message-container {
+    margin: 30px;
+}
+.popup-message-container h1 {
+    color: green;
+}
+.popup-message-container p {
+    margin: 30px 0;
+    color: grey;
+}
+#my-profile-btn {
+    padding: 10px 20px;
+    background: green;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-size: 13px;
+    cursor: pointer;
+}
+.show-popup {
+    opacity: 1;
+    z-index: 1;
+}

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="./mobile.css">
+    <link rel="stylesheet" href="./tablet.css">
+    <link rel="stylesheet" href="./desktop.css">
+    <link rel="stylesheet" href="./userSign.css">
+    <title>Sign-Up</title>
+</head>
+<body>
+    <header>
+        <div class="brand">
+            <a href="index.html">
+                <img src="./starcadetLogo.png" width="150" height="70" alt="logo" id="logo">
+            </a>
+        </div>
+        <nav>
+            <div class="toggle_btns">
+                <a class="fa fa-shopping-cart" href="cart.html"></a>
+                <a class="fa fa-bell" href=""></a>
+                <a class="switch fa fa-align-left active"></a>
+                <a class="switch fa fa-times"></a>
+            </div>
+
+            <ul id="modal" class="mainMenu">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="shop.html">Shop</a>
+                </li>
+                <li>
+                    <a href="aboutPage.html">About</a>
+                </li>
+                <li>
+                    <a href="faqs.html">FAQs</a>
+                </li>
+
+                <span class="header-btn" id="mobile">
+                    <a href="contact.html">
+                        <button id="contact-btn">Contact Us</button>
+                    </a>
+                    <a href="userSign.html">
+                        <button id="login-btn">Login</button>
+                    </a>
+                </span>
+            </ul>
+        </nav>
+
+        <span class="header-btn" id="desktop">
+            <i class="fa fa-bell"></i>
+            <a href="contact.html">
+                <button id="contact-btn">Contact Us</button>
+            </a>
+            <a href="userSign.html">
+                <button id="login-btn">Login</button>
+            </a>
+            <a href="cart.html">
+                <button>
+                    <i class="fa fa-shopping-cart"></i>
+                    Cart 
+                    (<div type="number" name="" value="0" class="desktop-count-cart" id="count-item">0</div>)
+                </button>
+            </a>   
+        </span>
+        
+    </header>
+
+    <p id="date"></p>
+
+    <div id="alertroom">
+
+        <div id="emptyalert" class="hidealert">
+
+            <h5>There was a problem</h5>
+            <span>Enter your names</span>
+            <span>Enter your email</span>
+            <span>Enter your mobile number</span>
+            <span>Create and confirm your password</span>
+
+        </div>
+    </div>
+
+    <div class="usersign-contianer body">
+
+        <form action="profile.html" id="signup-form">
+
+            <h1>Welcome to Star Cadet</h1>
+            <h4>You're about to create account!</h4>
+
+            <div class="div">
+                <label for="">First Name</label>
+                <input type="text" name="firstname" class="signupacc" id="firstname">
+                <small>Erro message</small>
+            </div>
+
+            <div class="div">
+                <label for="">Surname Name</label>
+                <input type="text" name="secondname" class="signupacc" id="secondname">
+                <small>Error</small>
+            </div>
+
+            <div class="div">
+                <label for="">Middle Name (optional)</label>
+                <input type="text" name="middlename" class="signupacc" id="middlename">
+                <small></small>
+            </div>
+
+            <div class="div">
+                <label for="">Mobile Number</label>
+                <input type="tel" name="tel" class="signupacc" id="tel">
+                <small></small>
+            </div>
+
+            <div class="div">
+                <label for="">Email Address</label>
+                <input type="email" name="signUpEmail" class="signupacc" id="signUpEmail">
+                <small>emak</small>
+            </div>
+
+            <div class="div">
+                <label for="">Create a Password</label>
+                <!-- <p id="pswalert">Password must contain number, @ or _ symbol and must be above 8 character</p> -->
+                <input type="password" name="signUpPassword" class="signupacc" id="myPass">
+                <i class="bi bi-eye-slash" id="togglePassword"></i>
+                <small>Pass</small>
+            </div>
+            
+            
+            
+            <p id="privacy">
+                By clicking <strong>Sign Up</strong>, <br> you agree to Star Cadet's <a href="">Condition of Use</a> <br> and <a href="">Privacy Policy</a>
+            </p>
+
+            <div>
+                <a href="#emptyalert">
+                    <button id="sign-up-btn">Sign up</button>
+                </a>
+            </div>
+
+            <div class="newuser">
+                Already a member?
+                <a href="userSign.html">Sign In</a>
+            </div>
+        </form>
+    </div>
+
+    <div id="footer">
+
+        <div class="span">
+            <span>Condition of use</span>
+            <span>Privacy Notice</span>
+            <span>Intrest-Based Ads</span>
+        </div>
+
+        <p>
+            <i class="fa fa-copyright">2022, starcadet.netlify.app, Inc. or its affiliates</i>
+        </p>
+
+    </div>
+
+    <div class="popup-overlay">
+
+        <div class="popup-box-container">
+
+            <div class="check-container">
+                <i class="fa fa-check-circle"></i>
+            </div>
+
+            <div class="popup-message-container">
+                <h1>Successful</h1>
+                <p>Your account has been created</p>
+            </div>
+
+            <div class="direct-profile-btn">
+
+                <a href="profile.html">
+                    <button id="my-profile-btn">
+                        Go to my Profile
+                        <i class="fa fa-user"></i>
+                    </button>
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+    <button id="signinbtn" style="display: none;"></button>
+    <p id="date" style="display: none;"></p>
+    <button id="signinbtn" style="display: none;"></button>
+    <div id="togglePassword" style="display: none;"></div>
+    <div id="signup-form" style="display: none;"></div>
+    <div id="greet-user" style="display: none;"></div>
+    <div id="user-wallet-email" style="display: none;"></div>
+    <script src="./script.js"></script>
+    <script src="./signUp.js"></script>
+</body>
+</html>
